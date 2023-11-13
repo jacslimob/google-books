@@ -14,11 +14,12 @@ const typeDefs = `
         username: String
         email: String
         password: String
-        savedBooks: [Book]
+        savedBooks: [Book]!
     }
 
     type Query {
-        book: [Book]
+        book: [Book]!
+        users: [User]!
     }
 `;
 
